@@ -1,0 +1,75 @@
+<html>
+    <head>
+       <title>Midsummer chronicles</title>
+</head>
+<body>
+
+<h1 style="font-size:60px; font-family: Verdana, Geneva, Tahoma, sans-serif;">MIDSUMMER CHRONICLES</h1>
+<p style="font-size:20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> by Myranda "Elle" Creasy</p>
+     <link rel="stylesheet" href="style1.css">
+
+      <!-- T / <div>
+        <img src="images/Screenshot 2025-12-09 at 12.37.06 PM.png"  width="500" height="650" alt="description for screenreader">
+        </div>
+        <div class=""> -->
+<div class="container">
+<div class="mySlides ">
+  <div class="numbertext">1 / 3</div>
+  <img src="untitled_artwork 12.png" style="width:70%">
+ 
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/Page 2.jpg" style="width:60%">
+ 
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Page 3.png" style="width:60%">
+ 
+</div>
+
+
+
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    </body>
+
+</html>
