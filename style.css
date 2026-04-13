@@ -19,7 +19,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  line-height: 0;
 }
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -44,8 +43,7 @@ img {
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 16px;
-  margin-top: 400px;
+  margin-top:80px;
   color: rgb(82, 42, 75);
   font-weight: bold;
   font-size: 60px;
@@ -98,4 +96,6 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
 }
